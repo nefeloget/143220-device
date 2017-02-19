@@ -2109,7 +2109,7 @@ a:active {
 /* Отображать контент только для скрин-ридеров */
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
