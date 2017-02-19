@@ -372,10 +372,12 @@ a:active {
   background: url('../img/sprite.png') no-repeat 0px -164px;
   width: 16px;
   height: 16px;
-  top: 16px;
+  top: 10px;
   left: 0;
 }
-
+.search-header-form {
+  margin-top: -10px;
+}
 .search-header-form:focus {
   border-bottom: 2px solid #000000;
 }
@@ -551,10 +553,11 @@ a:active {
 /* Project Footer */
 
 .main-footer {
+  margin-top: -5px;
   background-color: #444444;
   color: #ffffff;
   padding-top: 60px;
-  padding-bottom: 65px;
+  padding-bottom: 70px;
 }
 
 .main-footer a {
@@ -562,6 +565,8 @@ a:active {
 }
 
 .main-footer .main-footer-logo {
+  display: inline-block;
+  margin-top: 10px;
   color: #f7e184;
 }
 
@@ -619,6 +624,7 @@ a:active {
 }
 
 .main-footer-tel {
+  margin-top: 10px;
   margin-bottom: 60px;
 }
 
@@ -639,11 +645,13 @@ a:active {
   background-position: 0px -216px;
   opacity: 0.3;
 }
-
+.main-footer-address {
+  margin-top: 15px;
+}
 .main-footer-address::after {
   content: '';
   position: absolute;
-  top: 170px;
+  top: 180px;
   left: 0;
   display: block;
   width: 80px;
@@ -653,7 +661,7 @@ a:active {
 
 .nav-footer ul {
   list-style: none;
-  margin: 0;
+  margin: 15px 0 0 5px;
   padding: 0;
   text-align: center;
 }
@@ -672,9 +680,12 @@ a:active {
   text-transform: uppercase;
 }
 
-.menu-footer li {
-  margin-left: 20px;
-  margin-right: 24px;
+.menu-footer li:first-child {
+  margin-right: 26px;
+}
+
+.menu-footer li:nth-child(2) {
+  margin-right: 49px;
 }
 
 .social {
@@ -1568,6 +1579,10 @@ a:active {
 .value {
   margin-top: 0;
   border-top: 2px solid black;
+}
+
+.group-input-radio {
+  margin-top: 38px;
 }
 
 .filter .btn {
