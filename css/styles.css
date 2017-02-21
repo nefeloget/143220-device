@@ -272,7 +272,9 @@ a:active {
   top: 50%;
   left: 0px;
   z-index: -1;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: .08s;
   transition: .08s;
 }
 
@@ -500,7 +502,8 @@ a:active {
 }
 
 .catalog-link::after {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .catalog-link:hover::after,
@@ -747,6 +750,7 @@ a:active {
   position: relative;
   top: -10px;
   padding: 0 60px;
+  background-image: -webkit-linear-gradient(top, #ffe27f 120px, #ffffff 120px);
   background-image: linear-gradient(to bottom, #ffe27f 120px, #ffffff 120px);
   padding-top: 2px;
   margin-bottom: 24px;
@@ -1439,10 +1443,8 @@ a:active {
 
 .sorting-order-btn-down {
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
 
@@ -1760,8 +1762,11 @@ a:active {
 
 .sorting .wrapper-1 .list-sorting-type {
   margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 
@@ -2017,7 +2022,8 @@ a:active {
 }
 
 .icon-cross {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .icon-cross::after,
@@ -2033,7 +2039,8 @@ a:active {
 }
 
 .icon-cross::before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .modal-content label {
@@ -2131,11 +2138,13 @@ a:active {
 
 .modal-content-show {
   display: block;
-  animation: modal-show 1.2s;
+  -webkit-animation: modal-show 1.2s;
+          animation: modal-show 1.2s;
 }
 
 .modal-error {
-  animation: shake 0.4s;
+  -webkit-animation: shake 0.4s;
+          animation: shake 0.4s;
 }
 
 .modal-error textarea,
@@ -2161,6 +2170,15 @@ a:active {
 
 /* Animation */
 
+@-webkit-keyframes modal-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes modal-show {
   from {
     opacity: 0;
@@ -2170,17 +2188,38 @@ a:active {
   }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   20%,
   60% {
-    transform: translate(-48%, -50%);
+    -webkit-transform: translate(-48%, -50%);
+            transform: translate(-48%, -50%);
   }
   40%,
   80% {
-    transform: translate(-52%, -50%);
+    -webkit-transform: translate(-52%, -50%);
+            transform: translate(-52%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  20%,
+  60% {
+    -webkit-transform: translate(-48%, -50%);
+            transform: translate(-48%, -50%);
+  }
+  40%,
+  80% {
+    -webkit-transform: translate(-52%, -50%);
+            transform: translate(-52%, -50%);
   }
 }
