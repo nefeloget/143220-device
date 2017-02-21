@@ -11,17 +11,19 @@
   <header class="main-header container">
     <div class="main-header-wrapper">
       <h1 class="h1 main-header-logo">
-        <span class="visually-hidden">Интернет-магазин полезной электроники и не только</span>
+        <span class="visually-hidden">Интернет-магазин полезной электроники</span>
         <a href="index.html">Device</a>
       </h1>
 
-      <form class="search-header clearfix" method="get" action="https://echo.htmlacademy.ru">
-        <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-        <input class="search-header-input" type="search" name="search" id="header-search" placeholder="Поиск по сайту">
-        <button class="search-header-submit" type="submit">Найти</button>
-      </form>
+      <div class="search-header">
+        <form class="search-header-form clearfix" method="get" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+          <input class="search-header-input" type="search" name="search" id="header-search" placeholder="Поиск по сайту">
+          <button class="search-header-submit" type="submit">Найти</button>
+        </form>
+      </div>
 
-      <div class="user cleafix" aria-label="Меню пользователя">
+      <div class="user cleafix">
         <div class="user-block">
           <div class="user-personal">
             <a class="user-name" href="personal.html">Валентин Петухов</a>
@@ -37,7 +39,7 @@
         </div>
       </div>
 
-      <div class="nav-header">
+      <nav class="nav-header">
         <ul class="menu clearfix">
           <li class="menu-item">
             <a class="menu-link catalog-link" href="catalog.html">Каталог товаров</a>
@@ -62,7 +64,7 @@
           <li class="menu-item"><a class="menu-link" href="#">Гарантия</a></li>
           <li class="menu-item"><a class="menu-link" href="#">Контакты</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
   </header>
 
@@ -83,7 +85,7 @@
       <aside class="filter-product">
         <div class="wrapper-1">
           <div class="content content-left">
-            <h3>Фильтр:</h3>
+            <h3 class="filter-h3">Фильтр:</h3>
           </div>
         </div>
         <div class="wrapper-2">
@@ -206,12 +208,12 @@
                 <span class="item-card-new"></span>
               </div>
             </div>
-            <div class="pagination">
+            <div class="pagination clearfix">
               <div class="pagination-left">
-                <a class="pagination-btn pagination-disabled">Назад</a>
+                <a class="pagination-btn">Назад</a>
               </div>
               <div class="pagination-center">
-                <a class="pagination-current">1</a>
+                <a class="pagination-link pagination-current">1</a>
                 <a class="pagination-link" href="#">2</a>
                 <a class="pagination-link" href="#">3</a>
               </div>
@@ -233,9 +235,8 @@
           <p class="main-footer-address">г. Москва, ул. Строителей 15</p>
         </div>
         <div class="columns-9">
-          <nav class="user" aria-label="Меню пользователя">
+          <div class="user" aria-label="Меню пользователя">
             <div class="user-personal">
-              <a class="user-name" href="personal.html">Валентин Петухов</a>
               <a class="user-log-out" href="#">Выйти</a>
             </div>
 
@@ -243,26 +244,32 @@
               <li><a class="user-compare" href="compare.html">Сравнить</a></li>
               <li><a class="user-cart" href="cart.html">Корзина</a></li>
             </ul>
-          </nav>
+          </div>
 
           <div class="row">
             <div class="columns-6">
               <div class="nav-footer">
                 <ul class="menu-footer">
-                  <li class="menu-footer-item"><a class="menu-footer-link" href="#">Доставка</a></li>
-                  <li class="menu-footer-item"><a class="menu-footer-link" href="#">Гарантия</a></li>
-                  <li class="menu-footer-item"><a class="menu-footer-link" href="#">Контакты</a></li>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Гарантия</a></li>
+                  <li><a href="#">Контакты</a></li>
                 </ul>
 
                 <div class="social">
-                  <a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">Facebook</span></a>
-                  <a class="social-btn social-btn-inst" href="#"><span class="visually-hidden">Instagram</span></a>
-                  <a class="social-btn social-btn-tw" href="#"><span class="visually-hidden">Twitter</span></a>
+                  <a class="social-btn social-btn-fb" href="#">
+                    <span class="visually-hidden">Facebook</span>
+                  </a>
+                  <a class="social-btn social-btn-inst" href="#">
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                  <a class="social-btn social-btn-tw" href="#">
+                    <span class="visually-hidden">Twitter</span>
+                  </a>
                 </div>
               </div>
             </div>
             <div class="columns-3 main-footer-developer">
-              <div class="main-footer-tel">Тел. +7 (495) 495-95-95</div>
+              <div class="main-footer-tel">Тел.: +7 (495) 495-95-95</div>
               <a class="main-footer-made" href="https://htmlacademy.ru"><span class="visually-hidden">Htmlacademy</span></a>
             </div>
           </div>

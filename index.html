@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -82,7 +84,7 @@
               </div>
               <div class="one-half column">
                 <h2 class="h2 slide-header">Делай селфи, как Бен Стиллер!</h2>
-                <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a class="btn" href="#">Подробнее</a>
                 <div class="slide-features clearfix">
                   <div class="slide-feature-item">
@@ -109,7 +111,7 @@
               </div>
               <div class="one-half column">
                 <h2 class="h2 slide-header">Худеем правильно</h2>
-                <p class="slide-description">Мотивирующие фитнесс-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
+                <p class="slide-description">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 <a class="btn" href="#">Подробнее</a>
 
                 <div class="slide-features">
@@ -129,7 +131,7 @@
               </div>
               <div class="one-half column">
                 <h2 class="h2 slide-header">Порхает как бабочка, жалит как пчела!</h2>
-                <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированым под стандартную камеру.</p>
+                <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированым под стандартную камеру.</p>
                 <a class="btn" href="#">Подробнее</a>
 
                 <div class="slide-features">
@@ -223,8 +225,7 @@
           </div>
           <div class="features-slider-slide features-slide-warranty">
             <h2 class="h2">Гарантия</h2>
-            <p class="features-slider-description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
-              Товар, не дом, конечно же.
+            <p class="features-slider-description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.
             </p>
           </div>
           <div class="features-slider-slide features-slide-credit">
@@ -274,15 +275,15 @@
               <li><span>Автотрейдинг</span></li>
               <li><span>ЖелДорЭкспедиция</span></li>
             </ul>
-            <a class="btn" href="#">Подробнее о нас</a>
+            <a class="btn" href="">Подробнее о нас</a>
           </section>
         </div>
         <div class="columns-6">
           <section class="contacts">
             <h2 class="h2">Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <img src="img/index/map.jpg" width="560" height="222" alt="Карта г. Москва, ул. Строителей 15">
-            <a class="btn" href="#">Напишите нам</a>
+            <a class="btn-map" href="map.html"><img src="img/index/map.jpg" width="560" height="222" alt="Карта г. Москва, ул. Строителей 15"></a>
+            <a class="btn" href="contacts.html">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -297,7 +298,7 @@
           <p class="main-footer-address">г. Москва, ул. Строителей 15</p>
         </div>
         <div class="columns-9">
-          <nav class="user" aria-label="Меню пользователя">
+          <div class="user" aria-label="Меню пользователя">
             <div class="user-auth">
               <a class="user-log-in" href="auth.html">Войти</a>
             </div>
@@ -306,7 +307,7 @@
               <li><a class="user-compare" href="compare.html">Сравнить</a></li>
               <li><a class="user-cart" href="cart.html">Корзина</a></li>
             </ul>
-          </nav>
+          </div>
 
           <div class="row">
             <div class="columns-6">
@@ -342,26 +343,26 @@
 
   <div class="modal-content">
     <button class="modal-content-close icon-cross" type="button" title="Закрыть">Закрыть</button>
-    <form class="contact-us-form" action="#" method="post">
+    <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal-content-row">
         <label class="contact-us-username" for="contact-us-username">Ваше имя:</label>
         <label class="contact-us-email" for="contact-us-email">Ваш e-mail:</label>
       </div>
       <div class="modal-content-row">
-        <input type="text" name="username" id="contact-us-username" placeholder="Представьтесь, пожалуйста" required autofocus>
-        <input type="email" name="email" id="contact-us-email" placeholder="Для отправки ответа" required> </div>
+        <input type="text" name="username" id="contact-us-username" placeholder="Представьтесь, пожалуйста">
+        <input type="email" name="email" id="contact-us-email" placeholder="Для отправки ответа"> </div>
       <div class="modal-content-row">
         <label for="contact-us-letter">Текст письма:</label>
       </div>
-      <textarea name="letter" id="contact-us-letter" rows="7" cols="98" placeholder="В свободной форме" required></textarea>
-      <button class="modal-content-send extra-bold details-btn" type="submit" title="Отправить">Отправить</button>
+      <textarea name="letter" id="contact-us-letter" rows="7" cols="100" placeholder="В свободной форме"></textarea>
+      <button class="modal-content-send btn" type="submit" title="Отправить">Отправить</button>
     </form>
   </div>
   <div class="modal-content-map">
     <button class="modal-content-close icon-cross" type="button" title="Закрыть">Закрыть</button>
     <div id="map"></div>
   </div>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
   <script src="js/script.js"></script>
 
 </body>
