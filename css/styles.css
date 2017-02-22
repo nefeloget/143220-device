@@ -566,9 +566,14 @@ a:active {
 
 .main-footer .main-footer-logo {
   display: block;
-  margin-top: 6px;
-  margin-bottom: 35px;
+  margin-top: 10px;
+  margin-bottom: 28px;
   color: #f7e184;
+}
+
+.catalog-footer .main-footer-logo {
+  margin-top: 5px;
+  margin-bottom: 37px;
 }
 
 .main-footer-logo:hover {
@@ -753,7 +758,7 @@ a:active {
   background-image: -webkit-linear-gradient(top, #ffe27f 120px, #ffffff 120px);
   background-image: linear-gradient(to bottom, #ffe27f 120px, #ffffff 120px);
   padding-top: 2px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 .slides {
@@ -892,11 +897,18 @@ a:active {
 }
 
 .slider-controls {
-  position: absolute;
-  top: 337px;
-  right: 80px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  bottom: 230px;
+  right: 25px;
   z-index: 10;
-  text-align: center;
+  text-align: right;
 }
 
 .slider-controls label {
@@ -1243,7 +1255,7 @@ a:active {
 
 .about-us,
 .contacts {
-  margin-bottom: 85px;
+  margin-bottom: 82.5px;
 }
 
 .about-us::before,
@@ -1775,7 +1787,7 @@ a:active {
 .sorting .wrapper-2 .content {
   width: 832px;
   padding-left: 70px;
-  padding-bottom: 72px;
+  padding-bottom: 71.5px;
 }
 
 .sorting .wrapper-2 {
@@ -2098,6 +2110,7 @@ a:active {
   resize: none;
   margin-bottom: 40px;
   border: 0;
+  max-width: 760px;
 }
 
 .modal-content-send {
